@@ -84,7 +84,7 @@ export default {
 
     let playlistEmbed = new EmbedBuilder()
       .setTitle(`${playlist.data.title}`)
-      .setDescription(playlist.videos.map((song: Song, index: number) => `${index + 1}. ${song.title}`).join("\n"))
+      .setDescription(`${playlist.videos.length} songs added to queue`)
       .setURL(playlist.data.url!)
       .setColor("#F8AA2A")
       .setTimestamp();
